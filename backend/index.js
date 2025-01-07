@@ -30,7 +30,7 @@ const start = async () => {
     try {
     
         await connectDB(process.env.MONGODB_URL);
-        app.listen(8000, () => {
+        app.listen(3000, () => {
             console.log(`Server is running and connected to DB`);
         });
     } catch (err) {
